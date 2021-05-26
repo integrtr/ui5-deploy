@@ -1,0 +1,30 @@
+# action.yml
+name: "UI5 Deployer"
+description: "Deploy UI5 application to different environments"
+inputs:
+  type:
+    description: "Type of deployment - Neo, CF or BSP"
+    required: true
+  user:
+    description: "Credential - User ID"
+    required: true
+  password:
+    description: "Credential - Password"
+    required: true
+  host:
+    description: "System host url"
+    required: true
+    default: "eu2.hana.ondemand.com"
+  sub-account-id:
+    description: "SAP BTP Sub Account ID"
+    required: false
+
+runs:
+  using: "docker"
+  image: "Dockerfile"
+  args:
+    - ${{ inputs.type }}
+    - ${{ inputs.user }}
+    - ${{ inputs.password }}
+    - ${{ inputs.host }}
+    - ${{ inputs.sub-account-id }}
