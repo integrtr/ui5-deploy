@@ -1,6 +1,9 @@
 # action.yml
 name: "UI5 Deployer"
 description: "Deploy UI5 application to different environments"
+branding:
+  icon: 'upload-cloud'  
+  color: 'green'
 inputs:
   type:
     description: "Type of deployment - Neo, CF or BSP"
