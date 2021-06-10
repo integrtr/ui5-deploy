@@ -1,5 +1,5 @@
 # action.yml
-name: "UI5 Deployer"
+name: "UI5 Deploy"
 description: "Deploy UI5 application to different environments"
 branding:
   icon: 'upload-cloud'  
