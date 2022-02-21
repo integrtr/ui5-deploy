@@ -79,7 +79,7 @@ steps:
 
 * `password` : (Required) Login password for environment specified in `type`
 
-* `host` : (Required) Hostname for environment specified in `type`  (Example: `https://account.eu2.hana.ondemand.com/` or `https://sapdev.acme.com:8443/`)
+* `host` : (Required) Hostname for environment specified in `type`  (Example: `eu2.hana.ondemand.com` or `https://sapdev.acme.com:8443/`)
 
 * `sub-account-id` : (Optional) Technical name for your BTP sub-account (Example: 'jrqll30d0f' )
 
